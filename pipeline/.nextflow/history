@@ -1,0 +1,12 @@
+2025-08-03 10:03:53	1.5s	exotic_aryabhata	OK	889b79426ac8e4b04bbb0d2e215b749c	5d5a24ea-7ee5-4e82-a09f-c11d7b71bad8	nextflow run main.nf
+2025-08-03 10:31:26	4.7s	astonishing_bartik	ERR	910a5f1f7408e378e0a56a7223942162	9436f4fd-addc-45ce-8035-1e67738bc337	nextflow run main.nf
+2025-08-03 10:38:11	4.3s	friendly_shirley	ERR	910a5f1f7408e378e0a56a7223942162	156f5361-6342-4270-821e-2cf9a89c7ec2	nextflow run main.nf
+2025-08-03 10:38:37	3.2s	mighty_wiles	ERR	910a5f1f7408e378e0a56a7223942162	2bf87893-4665-4963-8f7c-fb137de9782d	nextflow run main.nf -with-docker
+2025-08-03 10:46:47	-	crazy_jennings	-	910a5f1f7408e378e0a56a7223942162	790e841f-d32e-4c8d-ba1f-9b2a9832275f	nextflow run main.nf -with-docker
+2025-08-03 13:33:00	4.5s	serene_mandelbrot	ERR	910a5f1f7408e378e0a56a7223942162	0efaa03b-0ab0-465c-a50c-5619784ad6ab	nextflow run main.nf
+2025-08-03 13:34:15	3.9s	furious_baekeland	ERR	910a5f1f7408e378e0a56a7223942162	2a4b70f1-54d6-450a-9559-b10f697e120d	nextflow run main.nf -with-docker
+2025-08-03 13:36:12	3.9s	maniac_mcclintock	ERR	910a5f1f7408e378e0a56a7223942162	b0aaaea7-cbc8-4fbe-8e44-ec18fa5c966a	nextflow run main.nf -with-docker
+2025-08-06 17:16:11	4.3s	curious_ritchie	ERR	910a5f1f7408e378e0a56a7223942162	6698e9ac-6e63-4f07-b6c2-fd310692f23b	nextflow run main.nf -with-docker
+2025-08-06 17:29:15	33m 35s	suspicious_saha	ERR	910a5f1f7408e378e0a56a7223942162	e785043f-b955-416f-bb3c-eb1ac3dfaffb	nextflow run main.nf -with-docker
+2025-08-07 19:54:10	4.7s	voluminous_kowalevski	ERR	910a5f1f7408e378e0a56a7223942162	0661caf5-86bf-4fcd-8f3e-ea94fcbdc0a0	nextflow run main.nf -with-docker
+2025-08-07 19:55:24	1h 23m 21s	furious_archimedes	OK	910a5f1f7408e378e0a56a7223942162	1f2f1b3a-6910-4bd4-93c2-14725b4bdaf5	nextflow run main.nf -with-docker
