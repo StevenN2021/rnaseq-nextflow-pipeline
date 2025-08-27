@@ -8,15 +8,16 @@ input:
 output:
     path "*"
 
+
 script:
 """
+#run fastqc on all trimmed reads
 fastqc ${reads}
+
+#run multiqc to aggregate the fastqc reports
 multiqc *fastqc*
 
 mkdir FASTQC
 mv *fastqc* FASTQC
-
 """
-
-
 }
