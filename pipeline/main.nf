@@ -17,26 +17,25 @@ params.trimmed='/Users/stevennguyen/Projects/nextflowrnaseq/pipeline/TRIMMED/*{_
 // hisat2 indices
 params.index = '/Users/stevennguyen/Projects/nextflowrnaseq/data/index/'
 
-// annotation file 
+// hg38 gtf file
 params.gtf = '/Users/stevennguyen/Projects/nextflowrnaseq/data/annotation/gencode.v42.annotation.gtf'
-params.debug = '/Users/stevennguyen/Projects/nextflowrnaseq/pipeline/Mapping/SRR16841617_trimmed_val.sorted.bam'
+
 workflow {
 
 // trimming raw reads
-//reads_ch=Channel.fromFilePairs(params.reads)
-//TRIM_GALORE(reads_ch).set{trimmed}
+reads_ch=Channel.fromFilePairs(params.reads)
+TRIM_GALORE(reads_ch)
 
-// running fastqc and multiqc report on trimmed reads
-trimmed_all=Channel.fromPath(params.trimmed).collect()
-FASTQC_MULTIQC(trimmed_all)
+// fastqc and multiqc report on trimmed
+FASTQC_MULTIQC(TRIM_GALORE.out.trimmed)
 
-// run hisat mapping
+// hisat2 alignment and samtools sort 
 trimmed_ch=Channel.fromFilePairs(params.trimmed, flat: true)
 index_ch=Channel.fromPath(params.index)
 hisat_input=trimmed_ch.combine(index_ch)
 HISAT_MAP(hisat_input)
 
-// samtools sort and indexing
+// samtools index
 SAMTOOLS_INDEX(HISAT_MAP.out.sorted_bams)
 
 // read counts with featureCounts

@@ -7,3 +7,4 @@
 /pipeline/work
 *.log
 *.gtf
+*.nextflow.log.
