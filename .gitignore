@@ -1,4 +1,4 @@
-data/
+/data/
 *.nextflow
 /pipeline/.nextflow
 /pipeline/bai_indices
@@ -6,3 +6,4 @@ data/
 /pipeline/TRIMMED
 /pipeline/work
 *.log
+*.gtf
