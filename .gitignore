@@ -1,0 +1,8 @@
+data/
+*.nextflow
+/pipeline/.nextflow
+/pipeline/bai_indices
+/pipeline/Mapping
+/pipeline/TRIMMED
+/pipeline/work
+*.log

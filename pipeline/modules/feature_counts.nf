@@ -3,14 +3,15 @@ process FEATURE_COUNTS {
 publishDir "Read_counts", mode: 'copy'
 
 input:
-    tuple path(sorted_bams), path(gtf)
+    path(sorted_bams)
+    path(gtf)
 
 output:
     "*"
 
 script:
-bams=sorted_bams.join(' ')
 """
+
 featureCounts \
 -a "${gtf}" \
 -o "raw_counts.txt" \
@@ -18,6 +19,6 @@ featureCounts \
 -t exon \
 -p \
 -T 4 \
-"${bams}"
+${sorted_bams}
 """
 }
