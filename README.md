@@ -1,7 +1,7 @@
 # RNAseq-Processing-Pipeline-with-Nextflow
 
 This Nextflow project allows for processing of bulk NGS RNAseq datasets in the form of FASTQ files to obtain a counts matrix for downstream DE analysis (Trim Galore -> FASTQC/MULTIQC -> Hisat2 -> featureCounts) 
-Pipeline is containerized with docker. 
+Pipeline is containerized with docker and the workflow script can be viewed in the [main](https://github.com/StevenN2021/RNAseq-Processing-Pipeline-with-Nextflow/blob/main/pipeline/main.nf) file.
 
 ## Modules 
 [TRIM_GALORE](https://github.com/StevenN2021/RNAseq-Processing-Pipeline-with-Nextflow/blob/main/pipeline/modules/trim_galore.nf) - runs trim galore on raw fastq files to remove adapter sequences. 
