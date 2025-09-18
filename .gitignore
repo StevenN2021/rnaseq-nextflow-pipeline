@@ -1,10 +1,15 @@
+
+# data directories 
 /data/
-*.nextflow
-/pipeline/.nextflow
 /pipeline/bai_indices
 /pipeline/Mapping
 /pipeline/TRIMMED
+*.gtf
+
+
+# nextflow files 
+*.nextflow.log.
+/pipeline/.nextflow
+*.nextflow
 /pipeline/work
 *.log
-*.gtf
-*.nextflow.log.
